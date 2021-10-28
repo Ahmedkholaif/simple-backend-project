@@ -3,7 +3,7 @@ const app = express()
 
 const helloRouter = require('./routers/hello');
 const pingRouter = require('./routers/ping');
-const peopleRouter = require('./routers/people');
+const peopleRouter = require('./routers/sw');
 
 const port = process.env.PORT || 3000;
 
