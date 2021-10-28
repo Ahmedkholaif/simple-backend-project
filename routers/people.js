@@ -7,7 +7,7 @@ router.get('/chars-remote', async function (req, res) {
 
   try{
     const peopleResponse = await getPeople();
-    const names = peopleResponse.data.results.map(person=> person.name)
+    const names = peopleResponse.map(person=> person.name)
     res.status(200).send(names);
   }catch(err){
     console.log({err});
